@@ -1,4 +1,4 @@
-# dotfiles.fish
+# dotfiles
 
 A set of configuration files to enhance the terminal experience.
 
@@ -11,13 +11,13 @@ configuration files.
 
 Clone onto your mac
 
-```
-git clone https://github.com/fernandoaleman/dotfiles.fish ~/dotfiles
+```sh
+git clone https://github.com/fernandoaleman/dotfiles ~/dotfiles
 ```
 
 Install the dotfiles
 
-```
+```sh
 env RCRC="$HOME/dotfiles/rcrc" rcup
 ```
 
@@ -28,7 +28,7 @@ variable being set
 
 Update the git repo and then run
 
-```
+```sh
 rcup
 ```
 
@@ -36,17 +36,13 @@ rcup
 
 Add your own customizations
 
-```
+```sh
 mkdir ~/dotfiles-local
 ```
 
 Put your customizations in the `~/dotfiles-local` directory with a `.local`
 extension
 
-* `~/dotfiles-local/config/fish/config.fish.local`
-* `~/dotfiles-local/config/fish/conf.d/abbr.fish.local`
-* `~/dotfiles-local/config/fish/conf.d/aliases.fish.local`
-* `~/dotfiles-local/config/fish/conf.d/*`
 * `~/dotfiles-local/config/git/git_template.local/*`
 * `~/dotfiles-local/config/git/config.local`
 * `~/dotfiles-local/config/tmux/tmux.conf.local`
@@ -55,7 +51,6 @@ extension
 ## What This Sets Up
 
 * [alacritty](https://alacritty.org)
-* [fish](https://fishshell.com)
 * [git](https://git-scm.com/)
 * [gitmux](https://github.com/arl/gitmux)
 * [homebrew](https://brew.sh)
@@ -65,3 +60,4 @@ extension
 * [rcm](https://github.com/thoughtbot/rcm)
 * [starship](https://starship.rs)
 * [tmux](https://github.com/tmux/tmux)
+* zsh
