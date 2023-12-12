@@ -4,12 +4,12 @@ A set of configuration files to enhance the terminal experience.
 
 ## Requirements
 
-Setup your [mac](https://github.com/fernandoaleman/mac) before installing these
+Setup your [laptop](https://github.com/fernandoaleman/laptop) before installing these
 configuration files.
 
 ## Install
 
-Clone onto your mac
+Clone the repo
 
 ```sh
 git clone https://github.com/fernandoaleman/dotfiles ~/dotfiles
