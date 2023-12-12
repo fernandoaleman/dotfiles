@@ -1,0 +1,29 @@
+#!/bin/sh
+
+if [ -d "$HOME/.config/tmux/plugins/tpm" ]; then
+  "$HOME/.config/tmux/plugins/tpm/bin/install_plugins"
+fi
+
+mkdir -p "$HOME"/.ssh
+chmod 700 "$HOME"/.ssh
+chmod 600 "$HOME"/.ssh/*
+chown -R "$USER" "$HOME"/.ssh
+
+if [ -f "$HOME/.ssh/id_rsa.pub" ]; then
+  ssh-add --apple-use-keychain
+fi
+
+# detect old OS X broken /etc/zshenv and suggest rename
+if grep -qw path_helper /etc/zshenv 2>/dev/null; then
+  dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
+
+  cat <<MSG >&2
+Warning: \`/etc/zshenv' configuration file on your system may cause unexpected
+PATH changes on subsequent invocations of the zsh shell. The solution is to
+rename the file to \`zprofile':
+  sudo mv /etc/{zshenv,zprofile}
+
+(called from ${dir}/post-up:${LINENO})
+
+MSG
+fi
