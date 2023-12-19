@@ -42,10 +42,12 @@ key_bindings:
   - {key: Tab, mods: Control, chars: "\x01n"}             # switch to next tmux window
   - {key: LBracket, mods: Command|Shift, chars: "\x01p"}  # switch to next tmux window
   - {key: RBracket, mods: Command|Shift, chars: "\x01n"}  # switch to previous tmux window
-  - {key: O, mods: Command, chars: "\x01u"}               # open URLs 'joshmedeski/tmux-fzf-url'
+  - {key: D, mods: Command, chars: "\x01d"}               # detach from tmux
   - {key: G, mods: Command, chars: "\x01g"}               # open git manager 'jesseduffield/lazygit'
   - {key: K, mods: Command, chars: "\x01\x54"}            # open t - tmux smart session manager
-  - {key: D, mods: Command, chars: "\x01d"}               # detach from tmux
+  - {key: L, mods: Command, chars: "\x01L" }              # switch to the last tmux session
+  - {key: O, mods: Command, chars: "\x01u"}               # open URLs 'joshmedeski/tmux-fzf-url'
+  - {key: Z, mods: Command, chars: "\x01z"}               # toggle zoom state of the current tmux pane
   - {key: Comma, mods: Command, chars: "\x01,"}           # rename tmux window
   - {key: Key1, mods: Command, chars: "\x011"}            # select tmux window 1
   - {key: Key2, mods: Command, chars: "\x012"}            #                ... 2
