@@ -1,0 +1,172 @@
+live_config_reload = true
+
+import = [
+  "~/.config/alacritty/catppuccin/catppuccin-mocha.toml",
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 20.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Heavy"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Heavy Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Medium Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[[keyboard.bindings]]
+chars = "\u0001\""
+key = "Minus"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001%"
+key = "Backslash"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001h"
+key = "Left"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001j"
+key = "Down"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001k"
+key = "Up"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001l"
+key = "Right"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001c"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001x"
+key = "W"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001n"
+key = "Tab"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u0001p"
+key = "LBracket"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0001n"
+key = "RBracket"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0001d"
+key = "D"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001g"
+key = "G"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001T"
+key = "K"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001L"
+key = "L"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001u"
+key = "O"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001z"
+key = "Z"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001,"
+key = "Comma"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00011"
+key = "Key1"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00012"
+key = "Key2"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00013"
+key = "Key3"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00014"
+key = "Key4"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00015"
+key = "Key5"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00016"
+key = "Key6"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00017"
+key = "Key7"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00018"
+key = "Key8"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00019"
+key = "Key9"
+mods = "Command"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.9
+startup_mode = "SimpleFullscreen"
+
+[window.padding]
+x = 25
+y = 20
