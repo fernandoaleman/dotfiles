@@ -124,7 +124,7 @@ alias gscp='git am --show-current-patch'
 alias grbs='val=`git log -1 --pretty=%s`; grhs1; gsw "$val"; unset val;'
 
 # Git print last stash
-alias gpls='gsl -1 --pretty=%s | awk -F'"'"': '"'"' '"'"'{print $2}'"'"''
+alias gpls="gsl -1 --pretty=%s | cut -f3- -d' '"
 
 # Commit last stash
 alias gcs='val=`gpls`; gsta; if [[ $? == 0 ]]; then gaa && gcmsg "$val" && unset val && gstd; fi;'
