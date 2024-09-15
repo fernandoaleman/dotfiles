@@ -7,6 +7,9 @@ import = [
 [env]
 TERM = "xterm-256color"
 
+[selection]
+save_to_clipboard = true
+
 [font]
 size = 20.0
 
@@ -26,11 +29,13 @@ style = "Medium Italic"
 family = "JetBrainsMono Nerd Font"
 style = "Medium"
 
+# Split tmux window horizontally
 [[keyboard.bindings]]
 chars = "\u0001\""
 key = "Minus"
 mods = "Command"
 
+# Split tmux window vertically 
 [[keyboard.bindings]]
 chars = "\u0001%"
 key = "Backslash"
@@ -56,106 +61,133 @@ chars = "\u0001l"
 key = "Right"
 mods = "Command"
 
+# Open new tmux tab
 [[keyboard.bindings]]
 chars = "\u0001c"
 key = "T"
 mods = "Command"
 
+# Close tmux tab
 [[keyboard.bindings]]
 chars = "\u0001x"
 key = "W"
 mods = "Command"
 
+# Move to next tmux tab
 [[keyboard.bindings]]
 chars = "\u0001n"
 key = "Tab"
 mods = "Control"
 
+# Move to previous tmux tab
 [[keyboard.bindings]]
 chars = "\u0001p"
 key = "LBracket"
 mods = "Command|Shift"
 
+# Move to next tmux tab
 [[keyboard.bindings]]
 chars = "\u0001n"
 key = "RBracket"
 mods = "Command|Shift"
 
+# Detach from tmux session
 [[keyboard.bindings]]
 chars = "\u0001d"
 key = "D"
 mods = "Command"
 
+# Open lazygit
 [[keyboard.bindings]]
 chars = "\u0001g"
 key = "G"
 mods = "Command"
 
+# Open tmux session manager
+[[keyboard.bindings]]
+chars = "\u0001s"
+key = "S"
+mods = "Command"
+
+# Open smart tmux session manager
 [[keyboard.bindings]]
 chars = "\u0001T"
 key = "K"
 mods = "Command"
 
+# Switch to last tmux session
 [[keyboard.bindings]]
 chars = "\u0001L"
 key = "L"
 mods = "Command"
 
+# tmux fzf urls
 [[keyboard.bindings]]
 chars = "\u0001u"
 key = "O"
 mods = "Command"
 
+# Expand current tmux window
 [[keyboard.bindings]]
 chars = "\u0001z"
 key = "Z"
 mods = "Command"
 
+# Rename tmux tab
 [[keyboard.bindings]]
 chars = "\u0001,"
 key = "Comma"
 mods = "Command"
 
+# Select tmux tab 1
 [[keyboard.bindings]]
 chars = "\u00011"
 key = "Key1"
 mods = "Command"
 
+# Select tmux tab 2
 [[keyboard.bindings]]
 chars = "\u00012"
 key = "Key2"
 mods = "Command"
 
+# Select tmux tab 3
 [[keyboard.bindings]]
 chars = "\u00013"
 key = "Key3"
 mods = "Command"
 
+# Select tmux tab 4
 [[keyboard.bindings]]
 chars = "\u00014"
 key = "Key4"
 mods = "Command"
 
+# Select tmux tab 5
 [[keyboard.bindings]]
 chars = "\u00015"
 key = "Key5"
 mods = "Command"
 
+# Select tmux tab 6
 [[keyboard.bindings]]
 chars = "\u00016"
 key = "Key6"
 mods = "Command"
 
+# Select tmux tab 7
 [[keyboard.bindings]]
 chars = "\u00017"
 key = "Key7"
 mods = "Command"
 
+# Select tmux tab 8
 [[keyboard.bindings]]
 chars = "\u00018"
 key = "Key8"
 mods = "Command"
 
+# Select tmux tab 9
 [[keyboard.bindings]]
 chars = "\u00019"
 key = "Key9"
