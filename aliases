@@ -149,6 +149,9 @@ alias gsw='git stash save --include-untracked --no-keep-index'
 alias gstk='git stash save --include-untracked --keep-index'
 alias gsk='git stash save --include-untracked --keep-index'
 
+alias gft='git fetch --tags'
+alias gftf='git fetch --tags --force'
+
 # Will cd into the top of the current repository
 # or submodule.
 alias grt='cd $(git rev-parse --show-toplevel || echo ".")'
@@ -177,6 +180,9 @@ alias ggpush='git push origin $(current_branch)'
 compdef ggpush=git
 alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
 compdef ggpnp=git
+
+# git pull rebase and fetch tags force
+alias ggpurt='ggpur && gftf'
 
 # upstream
 alias gupur='git pull --rebase upstream $(current_branch)'
