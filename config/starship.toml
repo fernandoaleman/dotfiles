@@ -25,7 +25,7 @@ disabled = true
 disabled = true
 
 [git_branch]
-disabled = true
+disabled = false
 
 [git_commit]
 disabled = true
