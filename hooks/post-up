@@ -9,7 +9,7 @@ chmod 700 "$HOME"/.ssh
 chmod 600 "$HOME"/.ssh/*
 chown -R "$USER" "$HOME"/.ssh
 
-if [ -f "$HOME/.ssh/id_rsa.pub" ]; then
+if [ -f "$HOME/.ssh/id_rsa.pub" ] || [ -f "$HOME/.ssh/id_ed25519.pub" ]; then
   ssh-add --apple-use-keychain
 fi
 
