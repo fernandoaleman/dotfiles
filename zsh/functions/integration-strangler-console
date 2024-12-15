@@ -1,0 +1,5 @@
+# login to the strangler integration console
+
+integration-strangler-console(){
+   ssh deploy@integration-strangler -t  "cd /var/apps/strangler/current/ && bundle exec rails c -e production"
+}
