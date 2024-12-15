@@ -1,5 +1,5 @@
 # login to the strangler production console
 
-prod-strangler-console(){
+function prod-strangler-console() {
    ssh deploy@strangler-01 -t  "cd /var/apps/strangler/current/ && bundle exec rails c -e production"
 }
