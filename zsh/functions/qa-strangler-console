@@ -1,5 +1,5 @@
 # login to the strangler qa console
 
 function qa-strangler-console() {
-   ssh deploy@qa-strangler -t  "cd /var/apps/strangler/current/ && bundle exec rails c -e production"
+   ssh deploy@qa-strangler-01 -t  "cd /var/apps/strangler/current/ && bundle exec rails c -e qa"
 }

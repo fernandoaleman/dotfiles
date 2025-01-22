@@ -1,5 +1,5 @@
 # login to the strangler staging console
 
 function staging-strangler-console() {
-   ssh deploy@staging-strangler -t  "cd /var/apps/strangler/current/ && bundle exec rails c -e production"
+   ssh deploy@staging-strangler-01 -t  "cd /var/apps/strangler/current/ && bundle exec rails c -e staging"
 }
