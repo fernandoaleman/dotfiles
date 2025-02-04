@@ -1,0 +1,14 @@
+theme = catppuccin-mocha
+
+maximize = true
+window-decoration = none
+
+# -----------------------------------------------
+# key bindings
+# -----------------------------------------------
+
+# Open smart tmux session manager
+keybind = super+K=text:\x01T
+
+# Switch to last tmux session
+keybind = super+L=text:\x01L
