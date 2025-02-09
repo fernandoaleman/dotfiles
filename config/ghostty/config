@@ -105,3 +105,6 @@ keybind = super+nine=text:\x019
 
 # copy
 keybind = super+c=text:"+y
+
+# open tmux floax
+keybind = super+.=text:\x01p
